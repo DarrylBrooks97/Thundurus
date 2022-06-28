@@ -11,9 +11,7 @@
 		CC065505286B8B6F00120FD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC065504286B8B6F00120FD0 /* ContentView.swift */; };
 		CC065507286B8B7400120FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC065506286B8B7400120FD0 /* Assets.xcassets */; };
 		CC06550A286B8B7400120FD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC065509286B8B7400120FD0 /* Preview Assets.xcassets */; };
-		CC065514286B8B7500120FD0 /* ThundurusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC065513286B8B7500120FD0 /* ThundurusTests.swift */; };
-		CC06551E286B8B7500120FD0 /* ThundurusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC06551D286B8B7500120FD0 /* ThundurusUITests.swift */; };
-		CC065520286B8B7500120FD0 /* ThundurusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC06551F286B8B7500120FD0 /* ThundurusUITestsLaunchTests.swift */; };
+		CC065536286BA88E00120FD0 /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC065535286BA88E00120FD0 /* HomepageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +38,8 @@
 		CC065506286B8B7400120FD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC065509286B8B7400120FD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC06550F286B8B7500120FD0 /* ThundurusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThundurusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC065513286B8B7500120FD0 /* ThundurusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThundurusTests.swift; sourceTree = "<group>"; };
 		CC065519286B8B7500120FD0 /* ThundurusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThundurusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC06551D286B8B7500120FD0 /* ThundurusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThundurusUITests.swift; sourceTree = "<group>"; };
-		CC06551F286B8B7500120FD0 /* ThundurusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThundurusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CC065535286BA88E00120FD0 /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				CC065501286B8B6F00120FD0 /* Thundurus */,
-				CC065512286B8B7500120FD0 /* ThundurusTests */,
-				CC06551C286B8B7500120FD0 /* ThundurusUITests */,
 				CC065500286B8B6F00120FD0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +88,10 @@
 		CC065501286B8B6F00120FD0 /* Thundurus */ = {
 			isa = PBXGroup;
 			children = (
+				CC065531286BA71000120FD0 /* Core */,
+				CC065530286BA70C00120FD0 /* Model */,
+				CC06552F286BA70900120FD0 /* Extensions */,
+				CC06552C286BA6ED00120FD0 /* Service */,
 				CC065502286B8B6F00120FD0 /* ThundurusApp.swift */,
 				CC065504286B8B6F00120FD0 /* ContentView.swift */,
 				CC065506286B8B7400120FD0 /* Assets.xcassets */,
@@ -110,21 +108,49 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		CC065512286B8B7500120FD0 /* ThundurusTests */ = {
+		CC06552C286BA6ED00120FD0 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				CC065513286B8B7500120FD0 /* ThundurusTests.swift */,
 			);
-			path = ThundurusTests;
+			path = Service;
 			sourceTree = "<group>";
 		};
-		CC06551C286B8B7500120FD0 /* ThundurusUITests */ = {
+		CC06552F286BA70900120FD0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				CC06551D286B8B7500120FD0 /* ThundurusUITests.swift */,
-				CC06551F286B8B7500120FD0 /* ThundurusUITestsLaunchTests.swift */,
 			);
-			path = ThundurusUITests;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CC065530286BA70C00120FD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC065531286BA71000120FD0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CC065534286BA85400120FD0 /* Homepage */,
+				CC065532286BA73200120FD0 /* Components */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CC065532286BA73200120FD0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CC065534286BA85400120FD0 /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				CC065535286BA88E00120FD0 /* HomepageView.swift */,
+			);
+			path = Homepage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC065536286BA88E00120FD0 /* HomepageView.swift in Sources */,
 				CC065505286B8B6F00120FD0 /* ContentView.swift in Sources */,
 				CC065503286B8B6F00120FD0 /* ThundurusApp.swift in Sources */,
 			);
@@ -266,7 +293,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC065514286B8B7500120FD0 /* ThundurusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +300,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC06551E286B8B7500120FD0 /* ThundurusUITests.swift in Sources */,
-				CC065520286B8B7500120FD0 /* ThundurusUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
