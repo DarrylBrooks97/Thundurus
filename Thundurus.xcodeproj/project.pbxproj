@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC065503286B8B6F00120FD0 /* ThundurusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC065502286B8B6F00120FD0 /* ThundurusApp.swift */; };
+		CC065505286B8B6F00120FD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC065504286B8B6F00120FD0 /* ContentView.swift */; };
+		CC065507286B8B7400120FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC065506286B8B7400120FD0 /* Assets.xcassets */; };
+		CC06550A286B8B7400120FD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC065509286B8B7400120FD0 /* Preview Assets.xcassets */; };
+		CC065514286B8B7500120FD0 /* ThundurusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC065513286B8B7500120FD0 /* ThundurusTests.swift */; };
+		CC06551E286B8B7500120FD0 /* ThundurusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC06551D286B8B7500120FD0 /* ThundurusUITests.swift */; };
+		CC065520286B8B7500120FD0 /* ThundurusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC06551F286B8B7500120FD0 /* ThundurusUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC065510286B8B7500120FD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC0654F7286B8B6F00120FD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC0654FE286B8B6F00120FD0;
+			remoteInfo = Thundurus;
+		};
+		CC06551A286B8B7500120FD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC0654F7286B8B6F00120FD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC0654FE286B8B6F00120FD0;
+			remoteInfo = Thundurus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC0654FF286B8B6F00120FD0 /* Thundurus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thundurus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC065502286B8B6F00120FD0 /* ThundurusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThundurusApp.swift; sourceTree = "<group>"; };
+		CC065504286B8B6F00120FD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CC065506286B8B7400120FD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC065509286B8B7400120FD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CC06550F286B8B7500120FD0 /* ThundurusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThundurusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC065513286B8B7500120FD0 /* ThundurusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThundurusTests.swift; sourceTree = "<group>"; };
+		CC065519286B8B7500120FD0 /* ThundurusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThundurusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC06551D286B8B7500120FD0 /* ThundurusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThundurusUITests.swift; sourceTree = "<group>"; };
+		CC06551F286B8B7500120FD0 /* ThundurusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThundurusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC0654FC286B8B6F00120FD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC06550C286B8B7500120FD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC065516286B8B7500120FD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC0654F6286B8B6F00120FD0 = {
+			isa = PBXGroup;
+			children = (
+				CC065501286B8B6F00120FD0 /* Thundurus */,
+				CC065512286B8B7500120FD0 /* ThundurusTests */,
+				CC06551C286B8B7500120FD0 /* ThundurusUITests */,
+				CC065500286B8B6F00120FD0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC065500286B8B6F00120FD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC0654FF286B8B6F00120FD0 /* Thundurus.app */,
+				CC06550F286B8B7500120FD0 /* ThundurusTests.xctest */,
+				CC065519286B8B7500120FD0 /* ThundurusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC065501286B8B6F00120FD0 /* Thundurus */ = {
+			isa = PBXGroup;
+			children = (
+				CC065502286B8B6F00120FD0 /* ThundurusApp.swift */,
+				CC065504286B8B6F00120FD0 /* ContentView.swift */,
+				CC065506286B8B7400120FD0 /* Assets.xcassets */,
+				CC065508286B8B7400120FD0 /* Preview Content */,
+			);
+			path = Thundurus;
+			sourceTree = "<group>";
+		};
+		CC065508286B8B7400120FD0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CC065509286B8B7400120FD0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC065512286B8B7500120FD0 /* ThundurusTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC065513286B8B7500120FD0 /* ThundurusTests.swift */,
+			);
+			path = ThundurusTests;
+			sourceTree = "<group>";
+		};
+		CC06551C286B8B7500120FD0 /* ThundurusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC06551D286B8B7500120FD0 /* ThundurusUITests.swift */,
+				CC06551F286B8B7500120FD0 /* ThundurusUITestsLaunchTests.swift */,
+			);
+			path = ThundurusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC0654FE286B8B6F00120FD0 /* Thundurus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC065523286B8B7500120FD0 /* Build configuration list for PBXNativeTarget "Thundurus" */;
+			buildPhases = (
+				CC0654FB286B8B6F00120FD0 /* Sources */,
+				CC0654FC286B8B6F00120FD0 /* Frameworks */,
+				CC0654FD286B8B6F00120FD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Thundurus;
+			productName = Thundurus;
+			productReference = CC0654FF286B8B6F00120FD0 /* Thundurus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC06550E286B8B7500120FD0 /* ThundurusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC065526286B8B7500120FD0 /* Build configuration list for PBXNativeTarget "ThundurusTests" */;
+			buildPhases = (
+				CC06550B286B8B7500120FD0 /* Sources */,
+				CC06550C286B8B7500120FD0 /* Frameworks */,
+				CC06550D286B8B7500120FD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC065511286B8B7500120FD0 /* PBXTargetDependency */,
+			);
+			name = ThundurusTests;
+			productName = ThundurusTests;
+			productReference = CC06550F286B8B7500120FD0 /* ThundurusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC065518286B8B7500120FD0 /* ThundurusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC065529286B8B7500120FD0 /* Build configuration list for PBXNativeTarget "ThundurusUITests" */;
+			buildPhases = (
+				CC065515286B8B7500120FD0 /* Sources */,
+				CC065516286B8B7500120FD0 /* Frameworks */,
+				CC065517286B8B7500120FD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC06551B286B8B7500120FD0 /* PBXTargetDependency */,
+			);
+			name = ThundurusUITests;
+			productName = ThundurusUITests;
+			productReference = CC065519286B8B7500120FD0 /* ThundurusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC0654F7286B8B6F00120FD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CC0654FE286B8B6F00120FD0 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					CC06550E286B8B7500120FD0 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = CC0654FE286B8B6F00120FD0;
+					};
+					CC065518286B8B7500120FD0 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = CC0654FE286B8B6F00120FD0;
+					};
+				};
+			};
+			buildConfigurationList = CC0654FA286B8B6F00120FD0 /* Build configuration list for PBXProject "Thundurus" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC0654F6286B8B6F00120FD0;
+			productRefGroup = CC065500286B8B6F00120FD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC0654FE286B8B6F00120FD0 /* Thundurus */,
+				CC06550E286B8B7500120FD0 /* ThundurusTests */,
+				CC065518286B8B7500120FD0 /* ThundurusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC0654FD286B8B6F00120FD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC06550A286B8B7400120FD0 /* Preview Assets.xcassets in Resources */,
+				CC065507286B8B7400120FD0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC06550D286B8B7500120FD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC065517286B8B7500120FD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC0654FB286B8B6F00120FD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC065505286B8B6F00120FD0 /* ContentView.swift in Sources */,
+				CC065503286B8B6F00120FD0 /* ThundurusApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC06550B286B8B7500120FD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC065514286B8B7500120FD0 /* ThundurusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC065515286B8B7500120FD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC06551E286B8B7500120FD0 /* ThundurusUITests.swift in Sources */,
+				CC065520286B8B7500120FD0 /* ThundurusUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC065511286B8B7500120FD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC0654FE286B8B6F00120FD0 /* Thundurus */;
+			targetProxy = CC065510286B8B7500120FD0 /* PBXContainerItemProxy */;
+		};
+		CC06551B286B8B7500120FD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC0654FE286B8B6F00120FD0 /* Thundurus */;
+			targetProxy = CC06551A286B8B7500120FD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CC065521286B8B7500120FD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC065522286B8B7500120FD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC065524286B8B7500120FD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Thundurus/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darrylbrooks97.Thundurus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC065525286B8B7500120FD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Thundurus/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darrylbrooks97.Thundurus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC065527286B8B7500120FD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darrylbrooks97.ThundurusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thundurus.app/Thundurus";
+			};
+			name = Debug;
+		};
+		CC065528286B8B7500120FD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darrylbrooks97.ThundurusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thundurus.app/Thundurus";
+			};
+			name = Release;
+		};
+		CC06552A286B8B7500120FD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darrylbrooks97.ThundurusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Thundurus;
+			};
+			name = Debug;
+		};
+		CC06552B286B8B7500120FD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darrylbrooks97.ThundurusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Thundurus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC0654FA286B8B6F00120FD0 /* Build configuration list for PBXProject "Thundurus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC065521286B8B7500120FD0 /* Debug */,
+				CC065522286B8B7500120FD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC065523286B8B7500120FD0 /* Build configuration list for PBXNativeTarget "Thundurus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC065524286B8B7500120FD0 /* Debug */,
+				CC065525286B8B7500120FD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC065526286B8B7500120FD0 /* Build configuration list for PBXNativeTarget "ThundurusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC065527286B8B7500120FD0 /* Debug */,
+				CC065528286B8B7500120FD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC065529286B8B7500120FD0 /* Build configuration list for PBXNativeTarget "ThundurusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC06552A286B8B7500120FD0 /* Debug */,
+				CC06552B286B8B7500120FD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC0654F7286B8B6F00120FD0 /* Project object */;
+}
