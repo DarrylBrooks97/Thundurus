@@ -16,10 +16,17 @@ struct HomepageView: View {
                     self.progress = 1.0
                 }
             }
-            LazyVStack {
-                Text("Thundurus").font(.system(size: 48, weight: .light, design: .serif)).foregroundColor(.white);
-                Text("A weather app build with ⚡️").font(.system(size: 24, weight: .light, design: .serif)).foregroundColor(.white);
-            }
+            RoundedRectangle(cornerRadius:25).frame(width: 350, height: 300)
+                    .padding()
+                    .foregroundColor(Color.white.opacity(0.5))
+                    .overlay(
+                        Group{
+                            LazyVStack {
+                                Text("Thundurus").font(.system(size: 48, weight: .light, design: .serif)).foregroundColor(.white);
+                                Text("A weather app build with ⚡️").font(.system(size: 24, weight: .light, design: .serif)).foregroundColor(.white);
+                            }
+                        }
+                    );
         }
     }
 }
