@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E21AE77286D1A5300087DB7 /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E21AE76286D1A5300087DB7 /* HomepageView.swift */; };
 		CC065503286B8B6F00120FD0 /* ThundurusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC065502286B8B6F00120FD0 /* ThundurusApp.swift */; };
 		CC065505286B8B6F00120FD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC065504286B8B6F00120FD0 /* ContentView.swift */; };
 		CC065507286B8B7400120FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC065506286B8B7400120FD0 /* Assets.xcassets */; };
 		CC06550A286B8B7400120FD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC065509286B8B7400120FD0 /* Preview Assets.xcassets */; };
-		CC065536286BA88E00120FD0 /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC065535286BA88E00120FD0 /* HomepageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E21AE76286D1A5300087DB7 /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
 		CC0654FF286B8B6F00120FD0 /* Thundurus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thundurus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC065502286B8B6F00120FD0 /* ThundurusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThundurusApp.swift; sourceTree = "<group>"; };
 		CC065504286B8B6F00120FD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		CC065509286B8B7400120FD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC06550F286B8B7500120FD0 /* ThundurusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThundurusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC065519286B8B7500120FD0 /* ThundurusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThundurusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC065535286BA88E00120FD0 /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +148,7 @@
 		CC065534286BA85400120FD0 /* Homepage */ = {
 			isa = PBXGroup;
 			children = (
-				CC065535286BA88E00120FD0 /* HomepageView.swift */,
+				7E21AE76286D1A5300087DB7 /* HomepageView.swift */,
 			);
 			path = Homepage;
 			sourceTree = "<group>";
@@ -283,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC065536286BA88E00120FD0 /* HomepageView.swift in Sources */,
+				7E21AE77286D1A5300087DB7 /* HomepageView.swift in Sources */,
 				CC065505286B8B6F00120FD0 /* ContentView.swift in Sources */,
 				CC065503286B8B6F00120FD0 /* ThundurusApp.swift in Sources */,
 			);

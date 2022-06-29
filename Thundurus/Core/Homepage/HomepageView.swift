@@ -3,6 +3,7 @@ import SwiftUI
 struct HomepageView: View {
     @State private var animateGradient = false;
     @State private var progress: CGFloat = 0;
+    @State private var location: String = "";
     var body: some View {
         let firstColor = Color(red: 198/255,green:255/255,blue:221/255);
         let secondColor = Color(red: 251/255,green:215/255,blue:134/255);
@@ -21,13 +22,37 @@ struct HomepageView: View {
                     .foregroundColor(Color.white.opacity(0.5))
                     .overlay(
                         Group{
-                            LazyVStack {
+                            LazyVStack(alignment: .center, spacing: 20) {
                                 Text("Thundurus").font(.system(size: 48, weight: .light, design: .serif)).foregroundColor(.white);
                                 Text("A weather app build with ⚡️").font(.system(size: 24, weight: .light, design: .serif)).foregroundColor(.white);
-                            }
+                                HStack {
+                                    Image(systemName: "magnifyingglass")
+                                    TextField("Search...", text: $location)
+                                }.modifier(customViewModifier(roundedCornes: 6, startColor: .orange, endColor: .purple, textColor: .white))
+                            }.padding().frame(width: .infinity, height: .infinity, alignment: .bottom)
+                        });
                         }
-                    );
         }
+    }
+
+struct customViewModifier: ViewModifier {
+    var roundedCornes: CGFloat
+    var startColor: Color
+    var endColor: Color
+    var textColor: Color
+    
+    func body(content: Content) -> some View {
+        content
+            .padding()
+            .background(LinearGradient(gradient: Gradient(colors: [startColor, endColor]), startPoint: .topLeading, endPoint: .bottomTrailing))
+            .cornerRadius(roundedCornes)
+            .padding(3)
+            .foregroundColor(textColor)
+            .overlay(RoundedRectangle(cornerRadius: roundedCornes)
+                        .stroke(LinearGradient(gradient: Gradient(colors: [startColor, endColor]), startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 2.5))
+            .font(.custom("Open Sans", size: 18))
+            
+            .shadow(radius: 10)
     }
 }
 
