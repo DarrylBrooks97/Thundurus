@@ -27,7 +27,7 @@ struct HomepageView: View {
                         Group{
                             LazyVStack(alignment: .center, spacing: 20) {
                                 Text("Thundurus").font(.system(size: 48, weight: .light, design: .serif)).foregroundStyle(LinearGradient(colors: [orange, lighterOrange], startPoint: .leading, endPoint: .trailing));
-                                Text("A weather app build with ⚡️").font(.system(size: 24, weight: .light, design: .serif)).foregroundColor(.white);
+                                Text("A weather app build with ⚡️").font(.system(size: 24, weight: .light, design: .serif)).foregroundColor(.gray);
                                 HStack {
                                     Image(systemName: "magnifyingglass")
                                     TextField("Enter Location", text: $location)
