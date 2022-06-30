@@ -17,13 +17,14 @@ struct HomepageView: View {
                     self.progress = 1.0
                 }
             }
-            RoundedRectangle(cornerRadius:25).frame(width: 350, height: 300)
+            RoundedRectangle(cornerRadius:25).frame(width: 350, height: .infinity)
                     .padding()
-                    .foregroundColor(Color.white.opacity(0.5))
+                    .foregroundColor(Color.white)
+                    .opacity(0.5)
                     .overlay(
                         Group{
                             LazyVStack(alignment: .center, spacing: 20) {
-                                Text("Thundurus").font(.system(size: 48, weight: .light, design: .serif)).foregroundColor(.white);
+                                Text("Thundurus").font(.system(size: 48, weight: .light, design: .serif));
                                 Text("A weather app build with ⚡️").font(.system(size: 24, weight: .light, design: .serif)).foregroundColor(.white);
                                 HStack {
                                     Image(systemName: "magnifyingglass")
@@ -44,7 +45,7 @@ struct customViewModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .padding()
-            .background(LinearGradient(gradient: Gradient(colors: [startColor, endColor]), startPoint: .topLeading, endPoint: .bottomTrailing))
+            .background(Color.gray.opacity(0.15))
             .cornerRadius(roundedCornes)
             .padding(3)
             .foregroundColor(textColor)
