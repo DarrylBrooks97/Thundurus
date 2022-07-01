@@ -4,6 +4,8 @@ struct HomepageView: View {
     @State private var animateGradient = false;
     @State private var progress: CGFloat = 0;
     @State private var location: String = "";
+    private let weatherService:WeatherService = WeatherService();
+    
     var body: some View {
         let firstColor = Color(red: 198/255,green:255/255,blue:221/255);
         let secondColor = Color(red: 251/255,green:215/255,blue:134/255);
@@ -30,11 +32,14 @@ struct HomepageView: View {
                                 Text("A weather app build with ⚡️").font(.system(size: 24, weight: .light, design: .serif)).foregroundColor(.gray);
                                 HStack {
                                     Image(systemName: "magnifyingglass")
-                                    TextField("Enter Location", text: $location)
+                                    TextField("Enter a Location", text: $location)
                                 }.modifier(customViewModifier(roundedCornes: 25, startColor: .orange, endColor: .purple, textColor: .white)).padding()
+                                Button("Search"){
+                                    weatherService.fetchWeatherData(location: location)
+                                }
                             }.padding().frame(width: .infinity, height: .infinity, alignment: .bottom)
                         });
-                        }
+        }
         }
     }
 

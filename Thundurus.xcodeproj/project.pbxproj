@@ -12,6 +12,7 @@
 		CC065505286B8B6F00120FD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC065504286B8B6F00120FD0 /* ContentView.swift */; };
 		CC065507286B8B7400120FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC065506286B8B7400120FD0 /* Assets.xcassets */; };
 		CC06550A286B8B7400120FD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC065509286B8B7400120FD0 /* Preview Assets.xcassets */; };
+		CC231EDD286F53D300E00B26 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC231EDC286F53D300E00B26 /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		CC065509286B8B7400120FD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC06550F286B8B7500120FD0 /* ThundurusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThundurusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC065519286B8B7500120FD0 /* ThundurusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThundurusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC231EDC286F53D300E00B26 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		CC06552C286BA6ED00120FD0 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				CC231EDC286F53D300E00B26 /* WeatherService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC231EDD286F53D300E00B26 /* WeatherService.swift in Sources */,
 				7E21AE77286D1A5300087DB7 /* HomepageView.swift in Sources */,
 				CC065505286B8B6F00120FD0 /* ContentView.swift in Sources */,
 				CC065503286B8B6F00120FD0 /* ThundurusApp.swift in Sources */,

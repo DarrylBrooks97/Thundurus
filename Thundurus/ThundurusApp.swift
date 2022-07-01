@@ -11,7 +11,7 @@ import SwiftUI
 struct ThundurusApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomepageView()
         }
     }
 }
