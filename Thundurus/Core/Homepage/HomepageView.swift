@@ -35,8 +35,8 @@ struct HomepageView: View {
                                     TextField("Enter a Location", text: $location)
                                 }.modifier(customViewModifier(roundedCornes: 25, startColor: .orange, endColor: .purple, textColor: .white)).padding()
                                 Button("Search"){
-                                    weatherService.fetchWeatherData(location: location)
-                                }
+                                    //                                    weatherService.fetchWeatherData(location: location)
+                                }.padding().foregroundColor(.white).background(Color(red: 141/255, green: 179/255, blue: 139/255)).clipShape(Capsule()).frame(width: .infinity, height: 0.9, alignment: .center)
                             }.padding().frame(width: .infinity, height: .infinity, alignment: .bottom)
                         });
         }
