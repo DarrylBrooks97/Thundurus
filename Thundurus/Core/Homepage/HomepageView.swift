@@ -1,9 +1,10 @@
 import SwiftUI
 
 struct HomepageView: View {
+    @Binding var showWeather: Bool;
+    @Binding var location: String;
     @State private var animateGradient = false;
     @State private var progress: CGFloat = 0;
-    @State private var location: String = "";
     private let weatherService:WeatherService = WeatherService();
     
     var body: some View {
@@ -34,9 +35,13 @@ struct HomepageView: View {
                                     Image(systemName: "magnifyingglass")
                                     TextField("Enter a Location", text: $location)
                                 }.modifier(customViewModifier(roundedCornes: 25, startColor: .orange, endColor: .purple, textColor: .white)).padding()
-                                Button("Search"){
-                                    //                                    weatherService.fetchWeatherData(location: location)
-                                }.padding().foregroundColor(.white).background(Color(red: 141/255, green: 179/255, blue: 139/255)).clipShape(Capsule()).frame(width: .infinity, height: 0.9, alignment: .center)
+                                
+                                Button{
+                                    print("Hello")
+                               } label: {
+                                  Text("Search").padding().foregroundColor(.white).background(Color(red: 141/255, green: 179/255, blue: 139/255)).clipShape(Capsule()).frame(width: 100, height: 0.9, alignment: .center)
+                                }
+                                
                             }.padding().frame(width: .infinity, height: .infinity, alignment: .bottom)
                         });
         }
@@ -63,11 +68,12 @@ struct customViewModifier: ViewModifier {
     }
 }
 
-struct HomepageView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomepageView()
-    }
-}
+//struct HomepageView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomepageView()
+//        ThundurusApp()
+//    }
+//}
 
 struct AnimatableGradientModifier: AnimatableModifier {
     let fromGradient: Gradient
