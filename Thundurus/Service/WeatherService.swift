@@ -1,28 +1,64 @@
 import Foundation
 
+struct Location: Hashable, Codable {
+    let lat: Double
+    let lng: Double
+}
+
+struct ViewPort: Hashable, Codable {
+    let northEast: Location
+    let southWest: Location
+}
+
+struct Geometry: Hashable, Codable {
+    let location: Location
+    let viewPort: ViewPort
+}
+
+struct Result: Hashable, Codable {
+    let address: String
+    let geometry: Geometry
+    let icon: String
+    let iconBgColor: String
+    let iconMaskURI: String
+    let name: String
+    let placeId: String
+    let reference: String
+    let types: Array<String>
+}
+
+struct Response: Hashable, Codable {
+    let html_attributions: Array<String>
+    let results: Array<Result>
+    let status: String
+    
+}
+
+
 struct WeatherService {
-    func fetchWeatherData(location: String){
-        let headers = [
-            "X-RapidAPI-Key": "33d18962abmsh493b6461ef0c7c8p10c31ejsn00fa53c6105f",
-            "X-RapidAPI-Host": "community-open-weather-map.p.rapidapi.com"
-        ]
-
-        let request = NSMutableURLRequest(url: NSURL(string: "https://community-open-weather-map.p.rapidapi.com/weather?q=\(location)&lat=0&lon=0&callback=test&lang=null&units=imperial")! as URL,
-                                                cachePolicy: .useProtocolCachePolicy,
-                                          timeoutInterval: 10.0);
-        request.httpMethod = "GET";
-        request.allHTTPHeaderFields = headers;
-
-        let session = URLSession.shared
-        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-            if (error != nil) {
-                let _ = print(error as Any)
-            } else {
-                let httpResponse = response as? HTTPURLResponse
-                let _ = print(httpResponse as Any)
+    func fetchLocation(location: String){
+        let fullURL: String = "http://localhost:8080/mobilemicroservicestarter/location?postal=" + location;
+        
+        guard let request = URL(string: fullURL) else {
+            return;
+        };
+        
+        let dataTask = URLSession.shared.dataTask(with: request){ data,
+            _, error in
+            guard let data = data, error == nil else {
+                return;
             }
-        })
+            do{
+                let location = try JSONDecoder().decode(Response.self, from: data);
+                DispatchQueue.main.async {
+                    
+                }
+            }catch{
+                
+            }
+//            let location = JSONDecoder().decode(AnyClass.self, from: data);
+            }
 
-        dataTask.resume()
+        dataTask.resume();
     }
 }

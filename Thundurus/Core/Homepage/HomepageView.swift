@@ -1,12 +1,37 @@
 import SwiftUI
 
 struct HomepageView: View {
-    @Binding var showWeather: Bool;
-    @Binding var location: String;
-    @State private var animateGradient = false;
+    @State var showWeather: Bool;
+    @State var location: String;
+    @State var animateGradient = false;
     @State private var progress: CGFloat = 0;
-    private let weatherService:WeatherService = WeatherService();
+//    private let weatherService:WeatherService = WeatherService();
     
+    func fetchLocation(location: String){
+        let fullURL: String = "http://localhost:8080/mobilemicroservicestarter/location?postal=" + location;
+        
+        guard let request = URL(string: fullURL) else {
+            return;
+        };
+        
+        let dataTask = URLSession.shared.dataTask(with: request){ data,
+            _, error in
+            guard let data = data, error == nil else {
+                return;
+            }
+            do{
+                let location = try JSONDecoder().decode(Response.self, from: data);
+                DispatchQueue.main.async {
+                    
+                }
+            }catch{
+                
+            }
+//            let location = JSONDecoder().decode(AnyClass.self, from: data);
+            }
+
+        dataTask.resume();
+    }
     var body: some View {
         let firstColor = Color(red: 198/255,green:255/255,blue:221/255);
         let secondColor = Color(red: 251/255,green:215/255,blue:134/255);
@@ -22,7 +47,9 @@ struct HomepageView: View {
                     self.progress = 1.0
                 }
             }
-            RoundedRectangle(cornerRadius:25).frame(width: 350, height: .infinity)
+            
+            RoundedRectangle(cornerRadius:25)
+                    .frame(maxWidth: 350, maxHeight: .infinity)
                     .padding()
                     .foregroundColor(Color.white)
                     .opacity(0.5)
@@ -36,14 +63,18 @@ struct HomepageView: View {
                                     TextField("Enter a Location", text: $location)
                                 }.modifier(customViewModifier(roundedCornes: 25, startColor: .orange, endColor: .purple, textColor: .white)).padding()
                                 
-                                Button{
-                                    print("Hello")
-                               } label: {
-                                  Text("Search").padding().foregroundColor(.white).background(Color(red: 141/255, green: 179/255, blue: 139/255)).clipShape(Capsule()).frame(width: 100, height: 0.9, alignment: .center)
-                                }
+                                Button(
+                                    action: {
+                                        let data = self.fetchLocation(location: location);
+                                        var _ = print(data);
+                                        
+                                    }
+                                    ,label: {
+                                      Text("Search").padding().foregroundColor(.white).background(Color(red: 141/255, green: 179/255, blue: 139/255)).clipShape(Capsule())});
                                 
-                            }.padding().frame(width: .infinity, height: .infinity, alignment: .bottom)
-                        });
+                                
+                            }.padding();
+            });
         }
         }
     }

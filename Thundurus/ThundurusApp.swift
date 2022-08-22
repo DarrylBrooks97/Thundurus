@@ -3,16 +3,18 @@ import SwiftUI
 
 @main
 struct ThundurusApp: App {
-    @State private var showWeather:Bool = false;
-    @State private var location:String = "";
+    @State var showWeather = false;
+    @State var location = "";
+//    @StateObject var HomePage = HomepageView();
     
     var body: some Scene {
         WindowGroup {
-            if(!showWeather){
-                HomepageView(showWeather: $showWeather, location: $location)
-            }else{
-                ContentView();
-            }
+            HomepageView(showWeather: showWeather, location: location);
+//            if(!showWeather){
+//                HomepageView(showWeather: $showWeather, location: $location)
+//            }else{
+//                ContentView();
+//            }
         }
     }
 }
